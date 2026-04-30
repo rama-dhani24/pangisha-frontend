@@ -1,0 +1,67 @@
+/* src/index.css — Pangisha global styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clay:    #C4622D;
+  --clay2:   #E07B45;
+  --sand:    #F5E6C8;
+  --sand2:   #FAF3E4;
+  --bark:    #3D2B1F;
+  --bark2:   #5C3D2E;
+  --cream:   #FFFBF4;
+  --olive:   #7A8C4B;
+  --shadow:  rgba(61, 43, 31, 0.10);
+  --shadowM: rgba(61, 43, 31, 0.18);
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background: var(--cream);
+  color: var(--bark);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar — subtle warm tone */
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: var(--sand2); }
+::-webkit-scrollbar-thumb  { background: rgba(61,43,31,.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--clay); }
